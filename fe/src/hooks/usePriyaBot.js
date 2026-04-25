@@ -409,12 +409,17 @@ export function usePriyaBot() {
   // ── Init greeting ───────────────────────────────────────────────────────────
 
   useEffect(() => {
+    let cancelled = false;
+
     (async () => {
       await sleep(550);
+      if (cancelled) return;
       addMsg({ from: "bot", text: "Hey 👋 I'm Priya, your personal style assistant!" });
       await sleep(950);
+      if (cancelled) return;
       setIsTyping(true);
       await sleep(1050);
+      if (cancelled) return;
       setIsTyping(false);
       addMsg({
         from: "bot",
@@ -423,7 +428,9 @@ export function usePriyaBot() {
         extras: SMART_EXTRAS,
       });
     })();
-  }, []); // intentionally empty — runs once on mount
+
+    return () => { cancelled = true; };
+  }, []);
 
   return { messages, isTyping, handleQuickReply, handleTextInput, handlePhotoUpload };
 }
