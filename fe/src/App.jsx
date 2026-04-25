@@ -3,6 +3,7 @@ import { CartProvider } from "./context/CartContext";
 import { AuthProvider } from "./context/AuthContext";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import PriyaBot from "./components/PriyaBot";
 import LandingPage from "./pages/LandingPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
@@ -30,6 +31,7 @@ export default function App() {
               </Routes>
             </main>
             <Footer />
+            <PriyaBot />
           </div>
         </CartProvider>
       </AuthProvider>
