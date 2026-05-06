@@ -31,7 +31,7 @@ export default function LoginPage() {
         <div className="bg-white rounded-3xl shadow-sm border border-skin-100 p-8">
           <div className="text-center mb-8">
             <Link to="/" className="text-2xl font-bold text-skin-600">
-              Skin<span className="text-skin-400">Lab</span>
+              Fashion <span className="text-skin-400">World</span>
             </Link>
             <h1 className="mt-4 text-2xl font-bold text-gray-900">Welcome back</h1>
             <p className="mt-1 text-gray-500 text-sm">Sign in to your account</p>

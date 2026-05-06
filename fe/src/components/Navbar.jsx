@@ -21,7 +21,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <span className="text-2xl font-bold text-skin-600 tracking-tight">
-              Skin<span className="text-skin-400">Lab</span>
+              Fashion <span className="text-skin-400">World</span>
             </span>
           </Link>
 

@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <span className="text-2xl font-bold text-white">
-              Skin<span className="text-skin-400">Lab</span>
+              Fashion <span className="text-skin-400">World</span>
             </span>
             <p className="mt-3 text-sm text-skin-300 max-w-xs leading-relaxed">
               Your destination for premium eyewear, fashion bags, and luxury cosmetics. Look and feel your best every day.
@@ -34,7 +34,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 pt-6 border-t border-skin-800 text-sm text-skin-400 text-center">
-          © {new Date().getFullYear()} SkinLab. All rights reserved.
+          © {new Date().getFullYear()} Fashion World. All rights reserved.
         </div>
       </div>
     </footer>
